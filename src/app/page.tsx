@@ -36,7 +36,7 @@ const FaZeIcon = () => (
   <img
     src="/Faze_Clan.svg"
     alt="FaZe Clan"
-    className="w-8 h-8 filter brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-200"
+    className="w-full h-full filter brightness-0 invert opacity-75 hover:opacity-100 transition-opacity duration-200"
   />
 );
 
@@ -57,34 +57,36 @@ export default function Home() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 h-screen w-full flex flex-col items-center justify-center text-white">
-        <div className="text-left space-y-6">
+      <div className="relative z-10 min-h-screen w-full flex flex-col items-center justify-center text-white px-6 py-12">
+        <div className="text-left space-y-4 md:space-y-6 max-w-4xl w-full">
           {/* Main title */}
-          <h1 className="font-bold text-6xl md:text-7xl lg:text-8xl tracking-tight">
+          <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight">
             Neriousy
           </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-200 font-light">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-200 font-light">
             Filip Hejmowski
           </h2>
 
-          <p className="text-gray-300 text-lg md:text-xl font-light max-w-2xl mt-6 leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg md:text-xl font-light max-w-2xl mt-4 md:mt-6 leading-relaxed">
             I try to build things — and when they break, I throw AI at them
             until they work. Sometimes it even feels like I know what I'm doing.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center text-gray-400 text-lg md:text-xl font-light space-y-1 md:space-y-0 md:space-x-4 mt-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-light space-y-2 sm:space-y-0 sm:space-x-3 md:space-x-4 mt-4">
             <span>Software Developer</span>
-            <span className="hidden md:inline">•</span>
+            <span className="hidden sm:inline">•</span>
             <span>AI Explorer</span>
-            <span className="hidden md:inline">•</span>
-            <div className="flex items-center space-x-2">
+            <span className="hidden sm:inline">•</span>
+            <div className="flex items-center space-x-1 sm:space-x-2 flex-wrap">
               <span>Counter Strike Tryhard</span>
-              <FaZeIcon />
               <span className="text-red-400 font-medium">#FazeUp</span>
+              <div className="w-6 h-6 sm:w-8 sm:h-8">
+                <FaZeIcon />
+              </div>
             </div>
           </div>
           {/* Social media icons */}
-          <div className="flex items-center justify-left space-x-12 mt-12">
+          <div className="flex items-center justify-start space-x-8 sm:space-x-10 md:space-x-12 mt-8 md:mt-12">
             <a
               href="https://github.com/neriousy"
               target="_blank"
@@ -92,7 +94,7 @@ export default function Home() {
               className="text-gray-300 hover:text-white transition-all duration-200 transform hover:scale-125"
               aria-label="GitHub"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12">
                 <GitHubIcon />
               </div>
             </a>
@@ -103,7 +105,7 @@ export default function Home() {
               className="text-gray-300 hover:text-purple-400 transition-all duration-200 transform hover:scale-125"
               aria-label="Twitch"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12">
                 <TwitchIcon />
               </div>
             </a>
@@ -114,7 +116,7 @@ export default function Home() {
               className="text-gray-300 hover:text-blue-400 transition-all duration-200 transform hover:scale-125"
               aria-label="Twitter"
             >
-              <div className="w-10 h-10 md:w-12 md:h-12">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12">
                 <TwitterIcon />
               </div>
             </a>

@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-dvw h-dvh`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         {children}
       </body>
